@@ -31,7 +31,9 @@ public class TrianguloRetangulo extends PoligonoReto{
      * @param cateto2 Cateto para o triângulo. Valor deve ser igual ou maior a 1, ou será corrigido para 1.
      */
     public TrianguloRetangulo(double cateto1, double cateto2){
-        //TODO
+        
+        super("TRIANGULO", cateto1, cateto2);
+
     }
 
     /**
@@ -40,7 +42,9 @@ public class TrianguloRetangulo extends PoligonoReto{
      */
     @Override
     public double area(){
-        //TODO
+        
+        double valorArea = (base*altura)/2;
+        return valorArea;
     }
 
     /**
@@ -49,7 +53,9 @@ public class TrianguloRetangulo extends PoligonoReto{
      */
     @Override
     public double perimetro(){
-        //TODO
+        
+        double valorPerimetro = base + altura + hipotenusa();
+        return valorPerimetro;
     }
 
     /**

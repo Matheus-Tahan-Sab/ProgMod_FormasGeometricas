@@ -32,6 +32,7 @@ public class Retangulo extends PoligonoReto{
      */
     public Retangulo(double base, double altura){
         
+        super("RETANGULO",base,altura);
     }
 
     /**
@@ -40,7 +41,9 @@ public class Retangulo extends PoligonoReto{
      */
     @Override
     public double area(){
-        //TODO
+        
+        double valorArea = base * altura;
+        return valorArea;
     }
 
     /**
@@ -49,7 +52,9 @@ public class Retangulo extends PoligonoReto{
      */
     @Override
     public double perimetro(){
-        //TODO
+        
+        double valorPerimetro = Math.pow(base,2) + Math.pow(altura,2);
+        return valorPerimetro;
     }
 
     /**
